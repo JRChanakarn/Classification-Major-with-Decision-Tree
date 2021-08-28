@@ -185,4 +185,5 @@ Because using one-hot with colume Age_Group will cause some training issues. The
 ![2](https://user-images.githubusercontent.com/68366806/131213763-ef9415f8-9f13-48a5-875b-64079a85dfea.png)
 ![3](https://user-images.githubusercontent.com/68366806/131213914-c310f8a7-6ddb-4c85-bd8f-eb43cb991714.png)
 ![5](https://user-images.githubusercontent.com/68366806/131213920-708d5044-4771-4371-a629-575de2abc0be.png)
-![1](https://user-images.githubusercontent.com/68366806/131213922-a3afbd8d-e8cb-4d6a-bd58-7bc32902d501.png)![4](https://user-images.githubusercontent.com/68366806/131213905-74f31ec3-243d-45a6-8b2f-bb4fcacf94d4.png)
+![1](https://user-images.githubusercontent.com/68366806/131213922-a3afbd8d-e8cb-4d6a-bd58-7bc32902d501.png)
+![4](https://user-images.githubusercontent.com/68366806/131213905-74f31ec3-243d-45a6-8b2f-bb4fcacf94d4.png)
