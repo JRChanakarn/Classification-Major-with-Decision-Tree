@@ -3,9 +3,7 @@
 This project is Decision-Tree classification major form dataset (student_major.csv)
 
 
-## Model
-
-### Decision tree
+## Code
 
 ### Import library
     import pandas as pd
