@@ -145,7 +145,7 @@ Because using one-hot with colume Age_Group will cause some training issues. The
 ### Create Decision Tree
 
     tree_dot = export_graphviz(    
-        tree_gscv.best_estimator_,
+        tree_gscv.best_estimator_, # You can change model(tree_gscv) to change decision tree. 
         out_file =None,
         feature_names = feature_names,
         class_names = amcls,
@@ -157,4 +157,30 @@ Because using one-hot with colume Age_Group will cause some training issues. The
 
 > Use output tree_dot in [webgraphviz](http://www.webgraphviz.com) then you will Decision Tree
 
+# Extra : Decision Tree + Ensemble Learning
+### Decision Tree + Bagging, Random Forest
+
+    from sklearn.ensemble import BaggingClassifier, RandomForestClassifier
+    from sklearn.neighbors import KNeighborsClassifier
+    from sklearn.model_selection import cross_val_score
+
+### Bagging
+
+    bagging= BaggingClassifier(DecisionTreeClassifier(), max_samples = 0.4, max_features = 0.9)
+    bagging.fit(X_train, Y_train)
+    
+    
+    y_pred = bagging.predict(X_test)
+    acc = np.mean(y_pred == Y_test)*100
+    print("Bagging + Decision Tree Accuracy", acc)
+    
+### Random Forest
+
+    Randtree_clf = RandomForestClassifier(n_estimators = 10, max_depth = None, min_samples_split = 2, random_state = 0)
+    Randtree_clf.fit(X_train, Y_train)
+    y_pred = Randtree_clf.predict(X_test)
+    acc = np.mean(y_pred == Y_test)*100
+    print("Randomforest Accuracy ->", acc)
 # Output
+
+![enter image description here](https://drive.google.com/drive/folders/1R0y4pfs5DqYZBYgn7qmifJHPcZy9OCrM)
