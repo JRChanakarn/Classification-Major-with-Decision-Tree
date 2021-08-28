@@ -7,9 +7,7 @@ This project is Decision-Tree classification major form dataset (student_major.c
 
 ### Decision tree
 
-![page7image40536928](blob:https://stackedit.io/c01b8c5d-5dcd-43d2-804b-68c57f04e8c7)  
-
-  ### Import library
+### Import library
     import pandas as pd
     import numpy as np
     import matplotlib.pyplot as plt
@@ -18,7 +16,7 @@ This project is Decision-Tree classification major form dataset (student_major.c
     from sklearn.tree import DecisionTreeClassifier, export_graphviz
     from sklearn.metrics import plot_confusion_matrix
         
-  ### Import dataset and prepare 
+### Import dataset and prepare 
     data = pd.read_csv('student_major.csv')
     data_clean = data.copy()
     
