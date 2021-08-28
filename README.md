@@ -183,4 +183,5 @@ Because using one-hot with colume Age_Group will cause some training issues. The
     print("Randomforest Accuracy ->", acc)
 # Output
 
-![enter image description here](https://drive.google.com/drive/folders/1R0y4pfs5DqYZBYgn7qmifJHPcZy9OCrM)
+![2](https://user-images.githubusercontent.com/68366806/131213763-ef9415f8-9f13-48a5-875b-64079a85dfea.png)
+
