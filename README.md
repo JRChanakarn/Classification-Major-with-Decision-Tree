@@ -124,18 +124,21 @@ Because using one-hot with colume Age_Group will cause some training issues. The
 
     print('')
     print("Accuracy Gini VS Max_depth")
-    plt.plot(g_model.cv_results_['mean_test_score'],color = 'r')
-    plt.plot(clf.cv_results_['mean_test_score'],color = 'b')
+    plt.plot(g_model.cv_results_['mean_test_score'],color = 'r',label = 'Gini')
+    plt.plot(clf.cv_results_['mean_test_score'],color = 'b',label = 'Max_depth')
     plt.xlabel("Max_depth")
     plt.ylabel("Accuracy")
+    plt.legend()
     plt.show()
+    
 **Accuracy Entropy VS Max_depth**
 
     print("Accuracy Entropy VS Max_depth")
-    plt.plot(tree_gscv.cv_results_['mean_test_score'],color = 'g')
-    plt.plot(clf.cv_results_['mean_test_score'],color = 'b')
+    plt.plot(tree_gscv.cv_results_['mean_test_score'],color = 'g',label = 'Entropy')
+    plt.plot(clf.cv_results_['mean_test_score'],color = 'b',label = 'Max_depth')
     plt.xlabel("Max_depth")
     plt.ylabel("Accuracy")
+    plt.legend()
     plt.show()
     
 ### Create Decision Tree
